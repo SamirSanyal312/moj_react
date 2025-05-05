@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Leave a Joke 🤡</h2>
+  <form method="post">
+    <label for="title">Joke Title (max 10 words):</label><br>
+    <input name="title" id="title" required><br><br>
+
+    <label for="body">Joke Body:</label><br>
+    <textarea name="body" id="body" rows="4" cols="50" required></textarea><br><br>
+
+    <button type="submit" class="btn-joke">Submit Joke</button>
+  </form>
+{% endblock %}

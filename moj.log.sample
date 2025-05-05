@@ -1,0 +1,148 @@
+2025-04-21T18:30:01 WARNING [_internal]  * Debugger is active!
+2025-04-21T18:30:37 WARNING [_internal]  * Debugger is active!
+2025-04-21T18:30:48 WARNING [_internal]  * Debugger is active!
+2025-04-21T18:31:00 WARNING [_internal]  * Debugger is active!
+2025-04-21T18:31:43 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T18:31:43 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T18:31:43 WARNING [_internal]  * Debugger is active!
+2025-04-21T18:31:59 INFO [__init__] Master of Jokes shutting down
+2025-04-21T18:31:59 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T18:31:59 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T18:31:59 WARNING [_internal]  * Debugger is active!
+2025-04-21T18:32:06 INFO [__init__] Master of Jokes shutting down
+2025-04-21T18:32:07 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T18:32:07 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T18:32:08 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T18:32:08 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T18:32:08 WARNING [_internal]  * Debugger is active!
+2025-04-21T18:32:16 INFO [auth] User logout, session_id=no-session
+2025-04-21T18:32:16 INFO [__init__] GET /auth/logout endpoint=auth.logout session_id=no-session status=302
+2025-04-21T18:32:16 INFO [__init__] Assigned new session ID: a311348c7f5a4be69ef118d2ffe6d663
+2025-04-21T18:32:16 INFO [__init__] GET /auth/login endpoint=auth.login session_id=a311348c7f5a4be69ef118d2ffe6d663 status=200
+2025-04-21T18:32:20 INFO [auth] Authentication success for user_id=1, session_id=no-session
+2025-04-21T18:32:20 INFO [__init__] POST /auth/login endpoint=auth.login session_id=no-session status=302
+2025-04-21T18:32:20 INFO [__init__] Assigned new session ID: 9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T18:32:20 INFO [roles] Authorization success: user_id=1, role=user, endpoint=jokes.index, session_id=9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T18:32:20 INFO [__init__] GET /joke/ endpoint=jokes.index session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T18:33:04 INFO [__init__] Master of Jokes shutting down
+2025-04-21T18:33:04 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T18:33:04 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T18:33:04 WARNING [_internal]  * Debugger is active!
+2025-04-21T19:01:26 INFO [__init__] Master of Jokes shutting down
+2025-04-21T19:01:26 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T19:01:26 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T19:01:26 WARNING [_internal]  * Debugger is active!
+2025-04-21T19:02:03 INFO [__init__] Master of Jokes shutting down
+2025-04-21T19:02:03 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T19:02:03 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T19:02:03 WARNING [_internal]  * Debugger is active!
+2025-04-21T19:03:02 INFO [__init__] Master of Jokes shutting down
+2025-04-21T19:03:02 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T19:03:02 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T19:03:02 WARNING [_internal]  * Debugger is active!
+2025-04-21T19:04:43 WARNING [__init__] GET /joke endpoint=unknown session_id=9d7ef035a0524e63b4e8ab2468670431 status=308
+2025-04-21T19:04:43 INFO [roles] Authorization success: user_id=1, role=user, endpoint=jokes.index, session_id=9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T19:04:43 INFO [__init__] GET /joke/ endpoint=jokes.index session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:04:45 INFO [__init__] GET /joke/all endpoint=jokes.all_jokes session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:04:46 INFO [roles] Authorization success: user_id=1, role=user, endpoint=jokes.index, session_id=9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T19:04:46 INFO [__init__] GET /joke/ endpoint=jokes.index session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:04:47 INFO [__init__] GET /joke/all endpoint=jokes.all_jokes session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:04:48 INFO [roles] Authorization success: user_id=1, role=user, endpoint=jokes.take_joke, session_id=9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T19:04:48 INFO [__init__] GET /joke/take endpoint=jokes.take_joke session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:04:50 INFO [roles] Authorization success: user_id=1, role=user, endpoint=jokes.index, session_id=9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T19:04:50 INFO [__init__] GET /joke/ endpoint=jokes.index session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:04:50 INFO [__init__] GET /joke/all endpoint=jokes.all_jokes session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:05:00 INFO [roles] Authorization success: user_id=1, role=user, endpoint=jokes.index, session_id=9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T19:05:00 INFO [__init__] GET /joke/ endpoint=jokes.index session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:05:01 INFO [roles] Authorization success: user_id=1, role=user, endpoint=jokes.view_joke, session_id=9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T19:05:01 INFO [__init__] POST /joke/view/1 endpoint=jokes.view_joke session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:05:03 INFO [__init__] GET /joke/all endpoint=jokes.all_jokes session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:05:04 INFO [roles] Authorization success: user_id=1, role=user, endpoint=jokes.take_joke, session_id=9d7ef035a0524e63b4e8ab2468670431
+2025-04-21T19:05:04 INFO [__init__] GET /joke/take endpoint=jokes.take_joke session_id=9d7ef035a0524e63b4e8ab2468670431 status=200
+2025-04-21T19:05:05 INFO [auth] User logout, session_id=no-session
+2025-04-21T19:05:05 WARNING [__init__] GET /auth/logout endpoint=auth.logout session_id=no-session status=302
+2025-04-21T19:05:05 INFO [__init__] Assigned new session ID: 29fc6af250954035b422ab6ab26ffabd
+2025-04-21T19:05:05 INFO [__init__] GET /auth/login endpoint=auth.login session_id=29fc6af250954035b422ab6ab26ffabd status=200
+2025-04-21T19:06:29 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=False
+2025-04-21T19:06:29 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T19:06:29 INFO [__init__] Master of Jokes shutting down
+2025-04-21T19:06:35 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=False
+2025-04-21T19:06:35 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T19:06:35 INFO [__init__] Master of Jokes shutting down
+2025-04-21T19:08:20 INFO [auth] Authentication success for user_id=2, session_id=no-session
+2025-04-21T19:08:20 WARNING [__init__] POST /auth/login endpoint=auth.login session_id=no-session status=302
+2025-04-21T19:08:20 INFO [__init__] Assigned new session ID: acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:20 INFO [roles] Authorization success: user_id=2, role=moderator, endpoint=jokes.index, session_id=acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:20 INFO [__init__] GET /joke/ endpoint=jokes.index session_id=acb1302a49fd4faba9d748660cd1e079 status=200
+2025-04-21T19:08:23 INFO [roles] Authorization success: user_id=2, role=moderator, endpoint=moderator.manage_users, session_id=acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:23 INFO [__init__] GET /moderator/manage-users endpoint=moderator.manage_users session_id=acb1302a49fd4faba9d748660cd1e079 status=200
+2025-04-21T19:08:24 INFO [roles] Authorization success: user_id=2, role=moderator, endpoint=moderator.dashboard, session_id=acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:24 INFO [__init__] GET /moderator/dashboard endpoint=moderator.dashboard session_id=acb1302a49fd4faba9d748660cd1e079 status=200
+2025-04-21T19:08:26 INFO [roles] Authorization success: user_id=2, role=moderator, endpoint=moderator.toggle_logging, session_id=acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:26 WARNING [__init__] POST /moderator/toggle-logging endpoint=moderator.toggle_logging session_id=acb1302a49fd4faba9d748660cd1e079 status=302
+2025-04-21T19:08:26 DEBUG [logging_utils] Entering moj.db.close_db args=(None,), kwargs={}
+2025-04-21T19:08:26 DEBUG [logging_utils] Exiting moj.db.close_db return=None
+2025-04-21T19:08:26 DEBUG [__init__] Entering moj.auth.load_logged_in_user args=(), kwargs={}
+2025-04-21T19:08:26 DEBUG [logging_utils] Entering moj.db.get_db args=(), kwargs={}
+2025-04-21T19:08:26 DEBUG [logging_utils] Exiting moj.db.get_db return=<sqlite3.Connection object at 0x104821a80>
+2025-04-21T19:08:26 DEBUG [db] SQL Statement: SELECT * FROM user WHERE id = 2
+2025-04-21T19:08:26 DEBUG [db] SQL returned row: {'id': 2, 'email': 'mod@mailsac.com', 'nickname': 'moderator', 'password': 'scrypt:32768:8:1$f4cgAMBiN2a40NWE$6bf2a9b592444c359b402d020281bcdc25baf0be7028906cd9ab22c041629a30cfc6d651a35b64adae921523bcc13e0cb0862ca973bf782cd3126731efa71967', 'joke_balance': 0, 'role': 'moderator'}
+2025-04-21T19:08:26 DEBUG [__init__] Exiting moj.auth.load_logged_in_user return=None
+2025-04-21T19:08:26 DEBUG [__init__] Entering moj.log_session_id args=(), kwargs={}
+2025-04-21T19:08:26 DEBUG [__init__] Session ID for request: acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:26 DEBUG [__init__] Exiting moj.log_session_id return=None
+2025-04-21T19:08:26 INFO [roles] Authorization success: user_id=2, role=moderator, endpoint=moderator.dashboard, session_id=acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:26 INFO [__init__] GET /moderator/dashboard endpoint=moderator.dashboard session_id=acb1302a49fd4faba9d748660cd1e079 status=200
+2025-04-21T19:08:26 DEBUG [logging_utils] Entering moj.db.close_db args=(None,), kwargs={}
+2025-04-21T19:08:26 DEBUG [logging_utils] Exiting moj.db.close_db return=None
+2025-04-21T19:08:28 DEBUG [__init__] Entering moj.auth.load_logged_in_user args=(), kwargs={}
+2025-04-21T19:08:28 DEBUG [logging_utils] Entering moj.db.get_db args=(), kwargs={}
+2025-04-21T19:08:28 DEBUG [logging_utils] Exiting moj.db.get_db return=<sqlite3.Connection object at 0x1048225c0>
+2025-04-21T19:08:28 DEBUG [db] SQL Statement: SELECT * FROM user WHERE id = 2
+2025-04-21T19:08:28 DEBUG [db] SQL returned row: {'id': 2, 'email': 'mod@mailsac.com', 'nickname': 'moderator', 'password': 'scrypt:32768:8:1$f4cgAMBiN2a40NWE$6bf2a9b592444c359b402d020281bcdc25baf0be7028906cd9ab22c041629a30cfc6d651a35b64adae921523bcc13e0cb0862ca973bf782cd3126731efa71967', 'joke_balance': 0, 'role': 'moderator'}
+2025-04-21T19:08:28 DEBUG [__init__] Exiting moj.auth.load_logged_in_user return=None
+2025-04-21T19:08:28 DEBUG [__init__] Entering moj.log_session_id args=(), kwargs={}
+2025-04-21T19:08:28 DEBUG [__init__] Session ID for request: acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:28 DEBUG [__init__] Exiting moj.log_session_id return=None
+2025-04-21T19:08:28 INFO [roles] Authorization success: user_id=2, role=moderator, endpoint=moderator.toggle_logging, session_id=acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:28 WARNING [__init__] POST /moderator/toggle-logging endpoint=moderator.toggle_logging session_id=acb1302a49fd4faba9d748660cd1e079 status=302
+2025-04-21T19:08:29 WARNING [__init__] POST /moderator/toggle-logging endpoint=moderator.toggle_logging session_id=acb1302a49fd4faba9d748660cd1e079 status=302
+2025-04-21T19:08:29 DEBUG [logging_utils] Entering moj.db.close_db args=(None,), kwargs={}
+2025-04-21T19:08:29 DEBUG [logging_utils] Exiting moj.db.close_db return=None
+2025-04-21T19:08:29 DEBUG [__init__] Entering moj.auth.load_logged_in_user args=(), kwargs={}
+2025-04-21T19:08:29 DEBUG [logging_utils] Entering moj.db.get_db args=(), kwargs={}
+2025-04-21T19:08:29 DEBUG [logging_utils] Exiting moj.db.get_db return=<sqlite3.Connection object at 0x104821a80>
+2025-04-21T19:08:29 DEBUG [db] SQL Statement: SELECT * FROM user WHERE id = 2
+2025-04-21T19:08:29 DEBUG [db] SQL returned row: {'id': 2, 'email': 'mod@mailsac.com', 'nickname': 'moderator', 'password': 'scrypt:32768:8:1$f4cgAMBiN2a40NWE$6bf2a9b592444c359b402d020281bcdc25baf0be7028906cd9ab22c041629a30cfc6d651a35b64adae921523bcc13e0cb0862ca973bf782cd3126731efa71967', 'joke_balance': 0, 'role': 'moderator'}
+2025-04-21T19:08:29 DEBUG [__init__] Exiting moj.auth.load_logged_in_user return=None
+2025-04-21T19:08:29 DEBUG [__init__] Entering moj.log_session_id args=(), kwargs={}
+2025-04-21T19:08:29 DEBUG [__init__] Session ID for request: acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:29 DEBUG [__init__] Exiting moj.log_session_id return=None
+2025-04-21T19:08:29 INFO [roles] Authorization success: user_id=2, role=moderator, endpoint=moderator.dashboard, session_id=acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:29 INFO [__init__] GET /moderator/dashboard endpoint=moderator.dashboard session_id=acb1302a49fd4faba9d748660cd1e079 status=200
+2025-04-21T19:08:29 DEBUG [logging_utils] Entering moj.db.close_db args=(None,), kwargs={}
+2025-04-21T19:08:29 DEBUG [logging_utils] Exiting moj.db.close_db return=None
+2025-04-21T19:08:29 DEBUG [__init__] Entering moj.auth.load_logged_in_user args=(), kwargs={}
+2025-04-21T19:08:29 DEBUG [logging_utils] Entering moj.db.get_db args=(), kwargs={}
+2025-04-21T19:08:29 DEBUG [logging_utils] Exiting moj.db.get_db return=<sqlite3.Connection object at 0x1048225c0>
+2025-04-21T19:08:29 DEBUG [db] SQL Statement: SELECT * FROM user WHERE id = 2
+2025-04-21T19:08:29 DEBUG [db] SQL returned row: {'id': 2, 'email': 'mod@mailsac.com', 'nickname': 'moderator', 'password': 'scrypt:32768:8:1$f4cgAMBiN2a40NWE$6bf2a9b592444c359b402d020281bcdc25baf0be7028906cd9ab22c041629a30cfc6d651a35b64adae921523bcc13e0cb0862ca973bf782cd3126731efa71967', 'joke_balance': 0, 'role': 'moderator'}
+2025-04-21T19:08:29 DEBUG [__init__] Exiting moj.auth.load_logged_in_user return=None
+2025-04-21T19:08:29 DEBUG [__init__] Entering moj.log_session_id args=(), kwargs={}
+2025-04-21T19:08:29 DEBUG [__init__] Session ID for request: acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:29 DEBUG [__init__] Exiting moj.log_session_id return=None
+2025-04-21T19:08:29 INFO [roles] Authorization success: user_id=2, role=moderator, endpoint=moderator.toggle_logging, session_id=acb1302a49fd4faba9d748660cd1e079
+2025-04-21T19:08:29 WARNING [__init__] POST /moderator/toggle-logging endpoint=moderator.toggle_logging session_id=acb1302a49fd4faba9d748660cd1e079 status=302
+2025-04-21T19:09:31 WARNING [__init__] GET /auth/logout endpoint=auth.logout session_id=no-session status=302
+2025-04-21T19:13:24 WARNING [__init__] GET /favicon.ico endpoint=unknown session_id=ad64ff3814f34a04babcfac6dde62dd3 status=404
+2025-04-21T19:23:40 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T19:23:40 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T19:23:40 WARNING [_internal]  * Debugger is active!
+2025-04-21T19:23:54 INFO [__init__] Master of Jokes shutting down
+2025-04-21T19:24:10 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T19:24:10 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T19:24:10 WARNING [_internal]  * Debugger is active!
+2025-04-21T19:24:21 INFO [__init__] Master of Jokes shutting down
+2025-04-21T19:25:50 INFO [__init__] App starting with SECRET_KEY='dev', DATABASE=/Users/saaivigneshp/repos/master-of-jokes/instance/moj.sqlite, DEBUG=True
+2025-04-21T19:25:50 INFO [__init__] Initialized Master of Jokes - Version 2.0
+2025-04-21T19:25:50 WARNING [_internal]  * Debugger is active!

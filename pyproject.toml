@@ -1,0 +1,19 @@
+[project]
+name = "master-of-jokes"
+version = "1.0.0"
+dependencies = [
+    "flask",
+    "click",
+    "flask-login",
+    "flask-sqlalchemy",
+    "gunicorn"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "coverage"
+]
+
+[tool.flask]
+app = "moj"

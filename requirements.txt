@@ -1,0 +1,6 @@
+flask
+click
+flask-login
+flask-sqlalchemy
+gunicorn
+

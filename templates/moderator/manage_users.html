@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Manage Users</h2>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nickname</th>
+      <th>Role</th>
+      <th>Balance</th>
+      <th>Actions</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+      <td>{{ user.id }}</td>
+      <td>{{ user.nickname }}</td>
+      <td>{{ user.role }}</td>
+      <td>
+        <form method="post" action="{{ url_for('moderator.update_balance', user_id=user.id) }}">
+          <input type="number" name="balance" value="{{ user.balance }}" min="0">
+          <button type="submit">Update Balance</button>
+        </form>
+      </td>
+      <td>
+        <form method="post" style="display:inline;">
+          <input type="hidden" name="user_id" value="{{ user.id }}">
+          {% if user.role == "user" %}
+            <button name="action" value="promote">Promote to Moderator</button>
+          {% elif user.role == "moderator" %}
+            <button name="action" value="demote">Demote to User</button>
+          {% endif %}
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <title>Master of Jokes</title>
+</head>
+<body>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  {% if g.user %}
+    <p>
+      Hi, {{ g.user['nickname'] }}!
+      <a href="{{ url_for('auth.logout') }}">Logout</a> |
+      <a href="{{ url_for('jokes.create') }}">Leave a Joke</a>
+      <a href="{{ url_for('jokes.take_joke') }}">Take a Joke</a>
+    </p>
+  {% else %}
+    <p>
+      <a href="{{ url_for('auth.login') }}">Login</a>
+      <a href="{{ url_for('auth.register') }}">Register</a>
+    </p>
+  {% endif %}
+
+  {% block content %}{% endblock %}
+</body>
+</html>

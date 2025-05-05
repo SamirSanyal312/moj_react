@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <h1>Moderator Dashboard 🛡️</h1>
+{% endblock %}
+
+{% block content %}
+  <p>Welcome, Moderator!</p>
+  <form method="post" action="{{ url_for('moderator.toggle_logging') }}">
+    <button class="btn-joke" type="submit">
+      {% if config.DEBUG_LOGGING %}
+        🔴 Disable Debug Logging
+      {% else %}
+        🟢 Enable Debug Logging
+      {% endif %}
+    </button>
+  </form>
+  
+{% endblock %}
+
+

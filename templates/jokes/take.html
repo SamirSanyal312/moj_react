@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Take a Joke 😄</h2>
+
+{% if not jokes %}
+<p>No jokes available to take right now. Please check back later!</p>
+{% else %}
+<table>
+  <thead>
+    <tr>
+      <th>Joke Title</th>
+      <th>Author</th>
+      <th>Average Rating</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for joke in jokes %}
+    <tr>
+      <td>{{ joke.title }}</td>
+      <td>{{ joke.nickname }}</td>
+      <td>{{ joke['avg_rating'] if joke['avg_rating'] else 'N/A' }}</td>
+      <td>
+        {% if joke.is_taken %}
+        <form
+          method="GET"
+          action="{{ url_for('jokes.view_joke', joke_id=joke.id) }}"
+          style="margin-top: 0"
+        >
+          <button type="submit" class="btn-joke">View Joke</button>
+        </form>
+        {% else %}
+        <form
+          method="POST"
+          action="{{ url_for('jokes.take_joke', joke_id=joke.id) }}"
+          style="margin-top: 0"
+        >
+          <input type="hidden" name="joke_id" value="{{ joke.id }}" />
+          <button type="submit" class="btn-joke">Take Joke</button>
+        </form>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %} {% endblock %}

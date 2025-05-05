@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Leave a Joke</h2>
+  <form method="post">
+    <label for="title">Title</label>
+    <input name="title" id="title" required>
+    <br><br>
+    <label for="body">Joke</label>
+    <textarea name="body" id="body" required></textarea>
+    <br><br>
+    <button type="submit">Submit Joke</button>
+  </form>
+{% endblock %}

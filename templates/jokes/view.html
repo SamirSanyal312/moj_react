@@ -1,0 +1,125 @@
+{% extends 'base.html' %} {% block content %}
+<h2>View Joke 🤡</h2>
+
+<table class="table">
+  <tr>
+    <th>Joke Title:</th>
+    <td>{{ joke.title }}</td>
+  </tr>
+  <tr>
+    <th>Author:</th>
+    <td>{{ joke.nickname }}</td>
+  </tr>
+  <tr>
+    <th>Created:</th>
+    <td>{{ joke.created }}</td>
+  </tr>
+  <tr>
+    <th>Body:</th>
+    <td style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">
+      {{ joke.body }}
+    </td>
+  </tr>
+  <tr>
+    <th>Average Rating:</th>
+    <td>
+      {% for i in range(1, 6) %} {% if i <= joke.avg_rating %}
+      <span style="color: orange">&#9733;</span>
+      <!-- Filled star (orange) -->
+      {% else %}
+      <span style="color: gray">&#9733;</span>
+      <!-- Empty star (gray) -->
+      {% endif %} {% endfor %}
+    </td>
+  </tr>
+</table>
+
+
+{% if is_author or g.user['role'] == 'moderator' %}
+
+<form method="POST" action="{{ url_for('jokes.view_joke', joke_id=joke.id) }}">
+  <label for="body"><strong>Edit Joke:</strong></label><br />
+  <textarea
+    name="body"
+    id="body"
+    rows="4"
+    style="width: 100%; padding: 8px; border-radius: 5px; margin-bottom: 10px"
+  >{{ joke.body }}</textarea>
+  <br />
+  <button
+    type="submit"
+    name="action"
+    value="update"
+    class="btn-joke"
+    style="background-color: #28a745; margin-right: 10px"
+  >
+    Update Joke
+  </button>
+  <button
+    type="submit"
+    name="action"
+    value="delete"
+    class="btn-joke"
+    style="background-color: #dc3545"
+  >
+    Delete Joke
+  </button>
+</form>
+
+{% else %}
+<form
+  method="POST"
+  action="{{ url_for('jokes.view_joke', joke_id=joke.id) }}"
+  style="text-align: center"
+>
+  <label
+    for="rating"
+    style="
+      font-weight: bold;
+      margin-right: 10px;
+      text-align: left;
+      margin-bottom: 8px;
+    "
+    >Rate this joke:</label
+  >
+  <select
+    name="rating"
+    id="rating"
+    required
+    style="
+      padding: 8px;
+      font-size: 14px;
+      width: 150px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <option value="5">5 Stars</option>
+    <option value="4">4 Stars</option>
+    <option value="3">3 Stars</option>
+    <option value="2">2 Stars</option>
+    <option value="1">1 Star</option></select
+  ><br />
+  <button
+  type="submit"
+  name="action"
+  value="rate"
+  class="btn-joke"
+  style="
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  "
+>
+  Submit Rating
+</button>
+</form>
+{% endif %} {% if joke.is_taken %}
+<p>You have already viewed this joke!</p>
+{% else %} {% endif %} {% endblock %}
